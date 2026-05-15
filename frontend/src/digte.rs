@@ -1,3 +1,18 @@
+pub const TEMA_OPLÆSNING: u64 = 1u64 << 33;
+
+/// First line of a poem is also the title
+pub fn first_line(s: &str) -> &str {
+    s.lines().next().unwrap_or("")
+}
+
+/// Everything after the first line (the title) is the poem body
+pub fn body(s: &str) -> &str {
+    match s.find('\n') {
+        Some(pos) => &s[pos + 1..],
+        None => "",
+    }
+}
+
 pub static SAMLINGER: [&str; 31] = [
     "Aftryk",
     "Billedbogen",
@@ -3839,7 +3854,7 @@ dagligdagens slidte
 fraser stilfærdigt falder ud af
 munden uden større
 opmærksomhed
-&Eacute;n tager til Kairo i 
+Én tager til Kairo i 
 14 dage og
 vender hjem med færre
 impulser end en anden der 
@@ -7122,7 +7137,7 @@ Februar 2005
 Vandring mellem
 skygger 
 Det grå skyggelands
-all&eacute;er af levende der
+alléer af levende der
 før var mennesker med
 rigtige håb og længsler
 Hvor glæden og 
@@ -7452,7 +7467,7 @@ livet vil
 Sandheden og
 løgnen har mange
 ansigter
-Mon &eacute;n af de to
+Mon én af de to
 kunne nøjes med
 mit?
 
@@ -10041,7 +10056,7 @@ betød
 Marts 2005"),
 ("Grib",32768,"Rapport
 
-&Egrave;n ting er at
+Én ting er at
 synke i jorden -
 en anden at udholde mørket
 kulden
@@ -17070,7 +17085,7 @@ Oktober 2004
 Det står foran mig og
 kræver sin pris
 Selvom jeg ikke er
-&eacute;n der betaler
+én der betaler
 roder jeg rundt til
 der er nok i
 sammenskrabede mønter
@@ -22943,7 +22958,7 @@ omringet territoriet og
 ligger parat med
 skarpe skud i
 alle forklædninger
-Med &eacute;t er han
+Med ét er han
 fire år og sidder på
 trappen til udhuset
 mens  kammeraterne
@@ -25453,7 +25468,7 @@ der værner dit
 ("Stengrunds tørst",68770890240,"Helvede
 
 
-De siger 
+De siger
 til dig, 
 at det er de andre,
 der er 
@@ -30327,7 +30342,7 @@ Måske er det
 sådan at
 hele livets
 mening kan skænkes i
-&eacute;t sekund
+ét sekund
 Måske er det
 sådan at den kan
 mistes i et
@@ -30349,7 +30364,7 @@ Ses
 
 
 August 2004"),
-("Undervejs",16777218,"Nå d&eacute;r
+("Undervejs",16777218,"Nå dér
 
 Kan man ikke 
 finde sig selv er
@@ -30626,7 +30641,7 @@ Hvem tror vel på
 løfter svøbt i
 måneskin
 Det skulle da 
-være &eacute;n der
+være én der
 tager måner
 alvorligt og
 sulter efter drømme der
@@ -30795,7 +30810,7 @@ Så Kom!
 August 2004"),
 ("Undervejs",549773647872,"Vished
 
-Med &eacute;t vidste hun at
+Med ét vidste hun at
 hun ikke blot levede for
 sig selv eller
 menneskeracen
@@ -31250,7 +31265,7 @@ ring om,
 beslaglagt og
 nu sætter du
 angrebet ind på 
-&eacute;n der bare
+én der bare
 kom forbi
 
 
@@ -32528,7 +32543,7 @@ Det er i de få
 held til at 
 distancere den indre 
 baby vi formår at 
-spille voksne   
+spille voksne –
 men i det lange løb er det
 babyen der vinder og
 når alt kommer til alt er
@@ -32583,7 +32598,7 @@ lange til
 fadet
 
                   "),
-("Yrk",68719479808,"De siger
+("Yrk",68719479808,"De siger
 
 
 Vil du angribe direkte
@@ -33230,7 +33245,7 @@ arrangeret
 at mine ører
 byder sig skamløst til for
 hvem som helst
-der hvisker bare &eacute;t
+der hvisker bare ét
 purt barnligt ord
 der er ægtefødt af hjertet"),
 ("Yrk",32768,"Kontrollant
@@ -33285,7 +33300,7 @@ Så let som
 ingenting fløj
 sætningen af sted og
 plantede en sten i
-hjertet på &eacute;n der
+hjertet på én der
 havde håbet på en 
 god dag
 
@@ -33295,7 +33310,7 @@ udtalt
 
 
           "),
-("Yrk",68719477760,"Lykken den er
+("Yrk",68719477760,"Lykken den er…
 
 Han var godt
 gift -
@@ -33682,7 +33697,7 @@ alt
 
 Øjne løber
 hurtigere end 
-ben  
+ben —
 også baglæns
                   "),
 ("Yrk",3072,"Reportage - med indlagt stilbrud
@@ -33737,7 +33752,7 @@ sprang ud i
 røde roser
 
           "),
-("Yrk",2,"Så længe
+("Yrk",2,"Så længe…
 
 Så længe musikken spiller, kan der danses.
 
@@ -34033,7 +34048,7 @@ Alt
 Kun ikke dig
 jeg forbrød mig
 imod"),
-("Yrk",0,"Tja
+("Yrk",0,"Tja…
 
 Lige så umuligt at
 gendanne sin
@@ -34119,7 +34134,7 @@ anfægter systemet
 
 Januar 2005
                   "),
-("Yrk",69793218560,"tete-a-tete
+("Yrk",69793218560,"tête-à-tête
 
 Selvom der ikke
 er langt over
