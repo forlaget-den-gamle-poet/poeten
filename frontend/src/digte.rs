@@ -18,9 +18,9 @@ pub static SAMLINGER: [&str; 31] = [
     "Billedbogen",
     "Brønden",
     "Dagen",
-    "De nyeste tekster",
+    "Landskab",
     "Det ender med et smil",
-    "Digte fra 2002",
+    "Klodeskyer",
     "Filibuster",
     "Firs tekster",
     "Grib",
@@ -3271,7 +3271,7 @@ aldrig blomstrede
 Fuglesang over blinde
 spejlflader overdøver
 de navnløses gråd"),
-("De nyeste tekster",50373152,"De
+("Landskab",50373152,"De
 
 De dør omkring mig
 Falder om og bliver til
@@ -3306,7 +3306,7 @@ skridt
 22.10.2013
 
                   "),
-("De nyeste tekster",0,"Dit øje i mit
+("Landskab",0,"Dit øje i mit
 boret gennem til 
 skyld og skam
 Vi forstår ikke
@@ -3322,7 +3322,7 @@ vælge side
 Juni 2014
 
                   "),
-("De nyeste tekster",621026476032,"Fuglen 
+("Landskab",621026476032,"Fuglen 
 skærer dagen for 
 med lange blanke 
 lyde
@@ -3344,7 +3344,7 @@ mørkets byrde
 
 
 06.11.1013"),
-("De nyeste tekster",17179877888,"Henstand
+("Landskab",17179877888,"Henstand
 
 Livets mening har 
 slået sig ned i
@@ -3363,7 +3363,7 @@ bestiges nu
 
 
 September 2007"),
-("De nyeste tekster",550210641952,"Hvad er meningen
+("Landskab",550210641952,"Hvad er meningen
 
 Fuglene
 Kommer ud af vinteren
@@ -3386,7 +3386,7 @@ Fuglene leder
 under hækken
 
 24.01.2014"),
-("De nyeste tekster",8640274944,"Landskab
+("Landskab",8640274944,"Landskab
 
 Vilde marker
 vokset til med
@@ -3410,7 +3410,7 @@ har trådt
 
 
 31. maj 2012"),
-("De nyeste tekster",0,"Lortevejr
+("Landskab",0,"Lortevejr
 
 Det regner.
 Dagen hænger i en
@@ -3433,7 +3433,7 @@ løbe over
 
 
 April 2015"),
-("De nyeste tekster",152084496,"Lærkesang
+("Landskab",152084496,"Lærkesang
 
 Min krop er 
 gammel,min sjæl så 
@@ -3449,7 +3449,7 @@ er
 
 
 Juli 2015"),
-("De nyeste tekster",69997724160,"Magt
+("Landskab",69997724160,"Magt
 
 Smeltede hjerte
 løb ikke væk mellem
@@ -3460,7 +3460,7 @@ kraft
 
 
 20.nov.2011"),
-("De nyeste tekster",0,"Mine ord falder ud af
+("Landskab",0,"Mine ord falder ud af
 munden og forsvinder i
 græsset
 Træernes skygger lokker
@@ -3477,7 +3477,7 @@ retter sig igen
 når duggen falder
 
 25.06.2014"),
-("De nyeste tekster",134225920,"Månen sår sin sæd i
+("Landskab",134225920,"Månen sår sin sæd i
 modne agre
 bundet tæt til 
 duggens hinde 
@@ -3494,7 +3494,7 @@ flænge i den
 
 
 Juni 2004"),
-("De nyeste tekster",18087936,"Nytårsfortsæt
+("Landskab",18087936,"Nytårsfortsæt
 
 Han vender
 bladet og 
@@ -3512,7 +3512,7 @@ nå land
 
 
 December 2008"),
-("De nyeste tekster",146028921344,"Nåle
+("Landskab",146028921344,"Nåle
 
 Sorgen er skrevet på
 krøllede sedler der
@@ -3530,13 +3530,13 @@ mørket
 
 
 29. maj 2011"),
-("De nyeste tekster",2562,"Overvejelse
+("Landskab",2562,"Overvejelse
 
 Hård vinter og 
 lånte fjer er en
 risikabel blanding
                   "),
-("De nyeste tekster",4328816640,"Sommernat
+("Landskab",4328816640,"Sommernat
 
 Vinduet svinger på
 sine hængsler
@@ -3555,7 +3555,7 @@ vinger
 
 
                   "),
-("De nyeste tekster",152600576,"Søen
+("Landskab",152600576,"Søen
 
 Krappe bølger
 Fugle har vinger
@@ -3566,7 +3566,7 @@ En snegl over stien
 
 
 Oktober 2012"),
-("De nyeste tekster",135823360,"Truffet
+("Landskab",135823360,"Truffet
 
 Fuglens sang 
 falder fra
@@ -3583,7 +3583,7 @@ til noget
 forude
 
 marts 2016"),
-("De nyeste tekster",550846334464,"Udvalgt
+("Landskab",550846334464,"Udvalgt
 
 Vi står fast i 
 hver sin
@@ -3609,13 +3609,13 @@ den anden
 
 November 2012
                   "),
-("De nyeste tekster",1207969794,"Vilkår
+("Landskab",1207969794,"Vilkår
 
 Sandheden bøjes ikke som
 ord
 
 8.maj 2011"),
-("De nyeste tekster",8758263808,"Ørnen
+("Landskab",8758263808,"Ørnen
 
 Kun ørnen ved hvad
 ørnen tænker,
@@ -3637,7 +3637,7 @@ fuglens flugt
 5. juni 2011
 
                   "),
-("De nyeste tekster",0,"Masken
+("Landskab",0,"Masken
 
 Med en slanges hug
 fæstned hun en
@@ -3656,7 +3656,7 @@ inde og blev væk i
 sig selv og
 vidste ikke længere
 hvem han var"),
-("De nyeste tekster",0,"Lim
+("Landskab",0,"Lim
 
 Jeg tænker i lag
 Husker i niveauer
@@ -5127,7 +5127,7 @@ bruge dem til
 
 
 September 2004"),
-("Digte fra 2002",17213424128,"Øen 1
+("Klodeskyer",17213424128,"Øen 1
 
 
 Vogteren
@@ -5150,7 +5150,7 @@ Rider utrætteligt
 angstens rute
 
                   "),
-("Digte fra 2002",17213424128,"Øen 2 
+("Klodeskyer",17213424128,"Øen 2 
 
 Rytteren
 
@@ -5172,7 +5172,7 @@ seende
 øjne
 
                   "),
-("Digte fra 2002",17213424128,"Øen 3
+("Klodeskyer",17213424128,"Øen 3
 
 
 Den faste grund
@@ -5200,7 +5200,7 @@ vogter
 
 
                   "),
-("Digte fra 2002",0,"Øjeblikkets mulighed
+("Klodeskyer",0,"Øjeblikkets mulighed
 
 
 I stilheds brud
@@ -5228,7 +5228,7 @@ der et øjeblik endnu
 tøver i mit øje
 
           "),
-("Digte fra 2002",17230233600,"Advarsel 
+("Klodeskyer",17230233600,"Advarsel 
 
 Jeg er bidsk
 bider for et godt ord
@@ -5239,7 +5239,7 @@ vort samvær
 kan bære
 
           "),
-("Digte fra 2002",8623521792,"Afmægtig 
+("Klodeskyer",8623521792,"Afmægtig 
 
 Vreden har taget mit liv på
 og svøbt det om sig
@@ -5259,7 +5259,7 @@ en ny søm skrider.
 
 
                   "),
-("Digte fra 2002",9714040832,"Bagtalt 
+("Klodeskyer",9714040832,"Bagtalt 
 
 Tågen
 har klistret alle udgange til
@@ -5293,7 +5293,7 @@ dine stærke sider
 
 
                   "),
-("Digte fra 2002",1081344,"Ballon
+("Klodeskyer",1081344,"Ballon
 
 
 Stemmerne
@@ -5312,7 +5312,7 @@ og svæver bort
 som en blå
 ballon i mørket
           "),
-("Digte fra 2002",549891080192,"Ekko
+("Klodeskyer",549891080192,"Ekko
 
 
 I trøsket træ
@@ -5333,7 +5333,7 @@ af kraften
 
 
           "),
-("Digte fra 2002",0,"Et digt
+("Klodeskyer",0,"Et digt
 
 
 Et digt
@@ -5346,7 +5346,7 @@ En skænket nærhed
 båret af ord
 
           "),
-("Digte fra 2002",26877133376,"Fangen
+("Klodeskyer",26877133376,"Fangen
 
 
 Grænsens virkelighed
@@ -5370,7 +5370,7 @@ af liv
 
 
                   "),
-("Digte fra 2002",206200406016,"Forbi
+("Klodeskyer",206200406016,"Forbi
 
 
 Skyggespil
@@ -5384,7 +5384,7 @@ spørgsmål
 der hurtigt
 går forbi
           "),
-("Digte fra 2002",223388664320,"Forrykt
+("Klodeskyer",223388664320,"Forrykt
 
 
 Du drømmer
@@ -5398,7 +5398,7 @@ se dig i
 din sandhed?
 
                   "),
-("Digte fra 2002",550963773440,"Frost
+("Klodeskyer",550963773440,"Frost
 
 
 Den frosne jord
@@ -5418,7 +5418,7 @@ Bedende råb
 mod vulkaners
 kegler 
           "),
-("Digte fra 2002",0,"Genfundet
+("Klodeskyer",0,"Genfundet
 
 
 Havets polerede
@@ -5440,7 +5440,7 @@ i min hånd
 
 
           "),
-("Digte fra 2002",69810028544,"Giv mig lov
+("Klodeskyer",69810028544,"Giv mig lov
 
 
 Giv mig lov til
@@ -5462,7 +5462,7 @@ går hver sin vej
 
 
           "),
-("Digte fra 2002",619550083072,"Grænseløs
+("Klodeskyer",619550083072,"Grænseløs
 
 
 Samhørighed 
@@ -5477,7 +5477,7 @@ skaber
 grænseløs samhørighed
 
                   "),
-("Digte fra 2002",135266304,"Håndslag
+("Klodeskyer",135266304,"Håndslag
 
 
 I brudte overfladers
@@ -5496,7 +5496,7 @@ budskab
 over evighedens 
 nåde
           "),
-("Digte fra 2002",85899378688,"Hjemfalden
+("Klodeskyer",85899378688,"Hjemfalden
 
 
 Du spørger forsigtigt
@@ -5523,7 +5523,7 @@ skyld
 
 
                   "),
-("Digte fra 2002",17196679680,"Klippen
+("Klodeskyer",17196679680,"Klippen
 
 
 Som et klippestykke
@@ -5540,7 +5540,7 @@ jeg og sætte din
 livsglæde fri
 
                   "),
-("Digte fra 2002",8591015936,"Klodeskyer
+("Klodeskyer",8591015936,"Klodeskyer
 
 
 Septemberhimlens skyer står 
@@ -5554,7 +5554,7 @@ et øjeblik endnu
 er mit
 
                   "),
-("Digte fra 2002",550829555712,"Krybben og korset
+("Klodeskyer",550829555712,"Krybben og korset
 
 
 Barnet
@@ -5571,7 +5571,7 @@ givende hænder
 
 
           "),
-("Digte fra 2002",17179869184,"Lagune
+("Klodeskyer",17179869184,"Lagune
 
 
 Lyset der toner
@@ -5594,7 +5594,7 @@ med ro
 
 
           "),
-("Digte fra 2002",552305950720,"Lys
+("Klodeskyer",552305950720,"Lys
 
 
 Lyset
@@ -5612,7 +5612,7 @@ På vej
 i lys
 mod lys
                   "),
-("Digte fra 2002",256,"Mosen
+("Klodeskyer",256,"Mosen
 
 
 Med et gult 
@@ -5635,7 +5635,7 @@ skygger
 
 
           "),
-("Digte fra 2002",16777216,"Omvendt
+("Klodeskyer",16777216,"Omvendt
 
 
 Alt begynder omvendt
@@ -5653,7 +5653,7 @@ og følger med som en
 omvendt der hemmeligt
 drømmer omvendte drømme
           "),
-("Digte fra 2002",2415919104,"Opstandelse
+("Klodeskyer",2415919104,"Opstandelse
 
 Vigende mørke
 over vandfladen
@@ -5671,7 +5671,7 @@ Stilhed over
 den frosne jord
 
                   "),
-("Digte fra 2002",33587200,"Regn
+("Klodeskyer",33587200,"Regn
 
 
 Regnen mod
@@ -5686,7 +5686,7 @@ grænse
 
 
           "),
-("Digte fra 2002",2147483652,"Rejsen
+("Klodeskyer",2147483652,"Rejsen
 
 
 Uvishedens
@@ -5708,7 +5708,7 @@ lyset
 længe inden
 dag
           "),
-("Digte fra 2002",1048832,"Sæbebobler
+("Klodeskyer",1048832,"Sæbebobler
 
 Sæbebobler
 i klodeskyer
@@ -5725,7 +5725,7 @@ plante
 
 
           "),
-("Digte fra 2002",68719476736,"Skyggevagt
+("Klodeskyer",68719476736,"Skyggevagt
 
 
 En stemme
@@ -5736,7 +5736,7 @@ tegner stilhedens
 skygger
 på vagt
           "),
-("Digte fra 2002",69793284096,"Slægtskabet
+("Klodeskyer",69793284096,"Slægtskabet
 
 
 Der er et syndigt rod i mit slægtskab 
@@ -5763,7 +5763,7 @@ når jeg at tænke
 
 
           "),
-("Digte fra 2002",206426964224,"Sollys 
+("Klodeskyer",206426964224,"Sollys 
 
 I et fejende sving slår 
 sollyset hul i skylaget 
@@ -5780,7 +5780,7 @@ Må livets sollys finde dig nu
 
 
                   "),
-("Digte fra 2002",0,"Spor
+("Klodeskyer",0,"Spor
 
 Du står på 
 hellig jord
@@ -5794,7 +5794,7 @@ af endnu levende
 drømme
 
           "),
-("Digte fra 2002",4698701824,"Stjernenat
+("Klodeskyer",4698701824,"Stjernenat
 
 
 Stjerner
@@ -5812,7 +5812,7 @@ i sin rede
 
 
                   "),
-("Digte fra 2002",81604411904,"Stjerneskud
+("Klodeskyer",81604411904,"Stjerneskud
 
 I nattens mørkeste time
 kommer
@@ -5838,7 +5838,7 @@ sugende vande
 
 
                   "),
-("Digte fra 2002",1073741824,"Strategi
+("Klodeskyer",1073741824,"Strategi
 
 
 Vandstrømmens bevægelse
@@ -5851,7 +5851,7 @@ intensitet
 en sommerfugls
 strandede vilje
           "),
-("Digte fra 2002",0,"Styrtet
+("Klodeskyer",0,"Styrtet
 
 Septemberblå himmel
 over gyldne rester
@@ -5871,7 +5871,7 @@ håb til vilje
 
 
           "),
-("Digte fra 2002",1048576,"Tur-retur
+("Klodeskyer",1048576,"Tur-retur
 
 
 Jeg sender et smil
@@ -5886,7 +5886,7 @@ til at nynne
 
 
           "),
-("Digte fra 2002",215822108672,"Viljers vold
+("Klodeskyer",215822108672,"Viljers vold
 
 
 Ild over
