@@ -4158,12 +4158,12 @@ Oktober 2004
 
 
 Samhørende:
-Før  Samling: Det ender med et smil
+Før - Samling: Det ender med et smil
 Nok -  Samling: : Det ender med et smil
-Besøget  Samling: Hjertets rytme
-Forlegenhedens rum  Samling: Hjertets rytme
+Besøget - Samling: Hjertets rytme
+Forlegenhedens rum - Samling: Hjertets rytme
 Selv - Samling: Det ender med et smil
-Dansen  Samling: Kun et øjeblik
+Dansen - Samling: Kun et øjeblik
 
 
                   "),
@@ -4246,8 +4246,8 @@ ranke
 Oktober 2004
 
 Samhørende:
-Besøget  Hjertets rytme
-Forlegenhedens rum  Hjertets rytme
+Besøget - Hjertets rytme
+Forlegenhedens rum - Hjertets rytme
 Før - det ender med et smil
 
 
@@ -4535,12 +4535,12 @@ Oktober 2004
 
 
 Samhørende:
-Før  Samling: Det ender med et smil
+Før - Samling: Det ender med et smil
 Nok -  Samling: : Det ender med et smil
-Besøget  Samling: Hjertets rytme
-Forlegenhedens rum  Samling: Hjertets rytme
+Besøget - Samling: Hjertets rytme
+Forlegenhedens rum - Samling: Hjertets rytme
 Selv - Samling: Det ender med et smil
-Dansen  Samling: Kun et øjeblik
+Dansen - Samling: Kun et øjeblik
 
 
 
@@ -4726,12 +4726,12 @@ Oktober 2004
 
 
 Samhørende:
-Før  Samling: Det ender med et smil
+Før - Samling: Det ender med et smil
 Nok -  Samling: : Det ender med et smil
-Besøget  Samling: Hjertets rytme
-Forlegenhedens rum  Samling: Hjertets rytme
+Besøget - Samling: Hjertets rytme
+Forlegenhedens rum - Samling: Hjertets rytme
 Selv - Samling: Det ender med et smil
-Dansen  Samling: Kun et øjeblik
+Dansen - Samling: Kun et øjeblik
 
 
 
@@ -11244,12 +11244,12 @@ med de 7 søstre, der smiler med tandløse gummer.
 
 
 Samhørende:
-Før Samling: Det ender med et smil
+Før - Samling: Det ender med et smil
 Nok -  Samling: : Det ender med et smil
-Besøget  Samling: Hjertets rytme
-Forlegenhedens rum  Samling: Hjertets rytme
+Besøget - Samling: Hjertets rytme
+Forlegenhedens rum - Samling: Hjertets rytme
 Selv - Samling: Det ender med et smil
-Dansen  Samling: Kun et øjeblik
+Dansen - Samling: Kun et øjeblik
 
 
 
@@ -16211,12 +16211,12 @@ maskerne falde
 
 
 Samhørende:
-Før Samling: Det ender med et smil
+Før - Samling: Det ender med et smil
 Nok -  Samling: : Det ender med et smil
-Besøget  Samling: Hjertets rytme
-Forlegenhedens rum  Samling: Hjertets rytme
+Besøget - Samling: Hjertets rytme
+Forlegenhedens rum - Samling: Hjertets rytme
 Selv - Samling: Det ender med et smil
-Dansen  Samling: Kun et øjeblik
+Dansen - Samling: Kun et øjeblik
 
 
 
