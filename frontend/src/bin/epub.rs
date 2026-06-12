@@ -64,7 +64,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             EpubContent::new("cover.xhtml", cover_page.as_bytes()).reftype(ReferenceType::Cover),
         )?;
 
-        let author = "F. Østergaard";
+        let author = "Frede Østergaard";
         builder.metadata("toc_name", "Indholdsfortegnelse")?;
 
         // UUID v5: deterministically derived from a namespace + name
@@ -140,7 +140,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     <head><link rel="stylesheet" type="text/css" href="../stylesheet.css"/></head>
     <body>
         <h1>{}</h1>
-        <h2>F. Østergaard</h2>
+        <h2>Frede Østergaard</h2>
     </body>
     </html>"#,
             samling_name
@@ -158,7 +158,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     <body>
         <div class="copyright">
             <p>{samling_name}</p>
-            <p>© F. Østergaard {year}</p>
+            <p>© Frede Østergaard {year}</p>
             <p>Alle rettigheder forbeholdes</p>
         </div>
     </body>
@@ -251,14 +251,19 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         <body>
         <h1>Om forfatteren</h1>
         <div class="author-photo">
-        <img src="author.jpg" alt="F. Østergaard" />
+        <img src="author.jpg" alt="Frede Østergaard" />
         </div>
 
         <p>
-        F. Østergaard debuterede med digtsamlingen
-        <i>Brønden</i> i 1965.
-        Efter de tidlige samlinger fulgte et længere ophold,
-        inden forfatterskabet blev genoptaget i 2002.
+        Frede Østergaard (f. 1945) er lærer og teologisk uddannet.
+        Han begyndte at skrive digte tidligt i livet, og
+        forfatterskabet har udviklet sig over mere end seks årtier.
+        </p>
+
+        <p>
+        De første tekster blev skrevet og delt i mindre,
+        uformelle sammenhænge, før de senere blev samlet og
+        udgivet gennem <i>Den gamle Poet</i>.
         Siden er der udkommet en lang række digtsamlinger.
         </p>
 
@@ -280,7 +285,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     <body>
         <h1>Andre samlinger</h1>
 
-        <p>F. Østergaard har desuden udgivet:</p>
+        <p>Frede Østergaard har desuden udgivet:</p>
 
         <ul>
           <li>Brønden (1965)</li>
