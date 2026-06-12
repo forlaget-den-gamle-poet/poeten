@@ -20,3 +20,4 @@ console_error_panic_hook = "0.1.7"
 wasm-logger = "0.2.0"
 wasm-bindgen-futures = "0.4.68"
 epub-builder = "0.8.3"
+uuid = { version = "1", features = ["v5"] }
