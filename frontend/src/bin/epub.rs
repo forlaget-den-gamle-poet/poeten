@@ -199,20 +199,20 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             let first_line = tekst.lines().next().unwrap_or("Uden titel");
 
             // Format Themes
-            let mut theme_labels = Vec::new();
-            for (idx, label) in digte::TEMAER.iter().enumerate() {
-                if (1u64 << idx) & temaer_mask != 0 && *label != "Oplæsning" {
-                    theme_labels.push(*label);
-                }
-            }
-            let themes_html = if !theme_labels.is_empty() {
-                format!(
-                    r#"<div class="theme-list"><br/><br/>Temaer: {}</div>"#,
-                    theme_labels.join(", ")
-                )
-            } else {
-                String::new()
-            };
+            //let mut theme_labels = Vec::new();
+            //for (idx, label) in digte::TEMAER.iter().enumerate() {
+            //    if (1u64 << idx) & temaer_mask != 0 && *label != "Oplæsning" {
+            //        theme_labels.push(*label);
+            //    }
+            //}
+            //let themes_html = if !theme_labels.is_empty() {
+            //    format!(
+            //        r#"<div class="theme-list"><br/><br/>Temaer: {}</div>"#,
+            //        theme_labels.join(", ")
+            //    )
+            //} else {
+            //    String::new()
+            //};
 
             // Format Poem body
             let tekst = xml_escape(&tekst);
@@ -228,7 +228,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                     <div class="poem">
                         {poem_body}
                     </div>
-                    {themes_html}
                 </body>
                 </html>"#
             );
@@ -243,30 +242,38 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         let image_data = std::fs::read("Images/Pasfoto 1964.jpg")?;
         builder.add_resource("author.jpg", image_data.as_slice(), "image/jpeg")?;
 
-        let about = r#"
+        let about = r#"<?xml version="1.0" encoding="utf-8"?>
         <html xmlns="http://www.w3.org/1999/xhtml">
         <head>
             <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
-            <title>Om forfatteren</title></head>
+            <title>Om forfatteren</title>
+        </head>
         <body>
-        <h1>Om forfatteren</h1>
-        <div class="author-photo">
-        <img src="author.jpg" alt="Frede Østergaard" />
-        </div>
+            <h1>Om forfatteren</h1>
+            <div class="author-photo">
+                <img src="author.jpg" alt="Frede Østergaard" />
+            </div>
 
-        <p>
-        Frede Østergaard (f. 1945) er lærer og teologisk uddannet.
-        Han begyndte at skrive digte tidligt i livet, og
-        forfatterskabet har udviklet sig over mere end seks årtier.
-        </p>
+            <p>
+            Frede Østergaard (f. 1945) er lærer og teologisk uddannet.
+            Han begyndte at skrive digte tidligt i livet, og
+            forfatterskabet har udviklet sig over mere end seks årtier.
+            </p>
 
-        <p>
-        De første tekster blev skrevet og delt i mindre,
-        uformelle sammenhænge, før de senere blev samlet og
-        udgivet gennem <i>Den gamle Poet</i>.
-        Siden er der udkommet en lang række digtsamlinger.
-        </p>
+            <p>
+            De første tekster blev skrevet og delt i mindre,
+            uformelle sammenhænge, før de senere blev samlet og
+            udgivet gennem <i>Den gamle Poet</i>.
+            Siden er der udkommet en lang række digtsamlinger.
+            </p>
 
+            <br/>
+            <h2>Kontakt</h2>
+            <p>
+            Har du kommentarer, eller ønsker du at give feedback på digtene, 
+            er du velkommen til at skrive til forfatteren på: 
+            <a href="mailto:dengamlepoet@gmail.com">dengamlepoet@gmail.com</a>
+            </p>
         </body>
         </html>
         "#;
