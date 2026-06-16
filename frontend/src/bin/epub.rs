@@ -1,4 +1,4 @@
-use epub_builder::{EpubBuilder, EpubContent, ReferenceType, ZipLibrary};
+use epub_builder::{EpubBuilder, EpubContent, MetadataOpf, ReferenceType, ZipLibrary};
 use frontend::digte;
 use std::fs::File;
 use uuid::Uuid;
@@ -11,54 +11,68 @@ fn xml_escape(s: &str) -> String {
 
 const MY_NAMESPACE: Uuid = uuid::uuid!("a1b2c3d4-e5f6-7890-abcd-ef1234567890");
 
-const YEARS: [(&str, &str); 31] = [
-    ("Brønden", "1965"),
-    ("Natur", "1968–1970"),
-    ("Halvfjerdserbrun", "1972"),
-    ("Stengrunds tørst", "1980–1983"),
-    ("Lys i mørket", "1986"),
-    ("Hjertets rytme", "2001"),
-    ("Klodeskyer", "2002"),
-    ("Stilhedens styrke", "2002"),
-    ("Yrk", "2002–2003"),
-    ("Konserves", "2003"),
-    ("Vækst", "2003"),
-    ("Firs tekster", "2003–2004"),
-    ("Kun et øjeblik", "2004"),
-    ("Dagen", "2004"),
-    ("Det ender med et smil", "2004"),
-    ("Vejen", "2004"),
-    ("Til Dig", "2004"),
-    ("Undervejs", "2004"),
-    ("Filibuster", "2004–2005"),
-    ("Perler på snor", "2004–2010"),
-    ("Billedbogen", "2005"),
-    ("Hjertets slag", "2005"),
-    ("Grib", "2005"),
-    ("Overvejelser", "2005"),
-    ("Skygger", "2005–2006"),
-    ("Tegn", "2005–2006"),
-    ("Jordens liv", "2006"),
-    ("Opdagelsesrejse", "2006"),
-    ("Månelys", "2006–2009"),
-    ("Aftryk", "2010–2011"),
-    ("Landskab", "2004–2023"),
+const YEARS: [(&str, &str, &str); 31] = [
+    ("Brønden", "1965", "9788785590008"),
+    ("Natur", "1968–1970", "9788785590015"),
+    ("Halvfjerdserbrun", "1972", "9788785590022"),
+    ("Stengrunds tørst", "1980–1983", "9788785590039"),
+    ("Lys i mørket", "1986", "9788785590046"),
+    ("Hjertets rytme", "2001", "9788785590053"),
+    ("Klodeskyer", "2002", "9788785590060"),
+    ("Stilhedens styrke", "2002", "9788785590077"),
+    ("Yrk", "2002–2003", "9788785590084"),
+    ("Konserves", "2003", "9788785590091"),
+    ("Vækst", "2003", "9788785590107"),
+    ("Firs tekster", "2003–2004", "9788785590114"),
+    ("Kun et øjeblik", "2004", "9788785590121"),
+    ("Dagen", "2004", "9788785590138"),
+    ("Det ender med et smil", "2004", "9788785590145"),
+    ("Vejen", "2004", "9788785590152"),
+    ("Til Dig", "2004", "9788785590169"),
+    ("Undervejs", "2004", "9788785590176"),
+    ("Filibuster", "2004–2005", "9788785590183"),
+    ("Perler på snor", "2004–2010", "9788785590190"),
+    ("Billedbogen", "2005", "9788785590206"),
+    ("Hjertets slag", "2005", "9788785590213"),
+    ("Grib", "2005", "9788785590220"),
+    ("Overvejelser", "2005", "9788785590237"),
+    ("Skygger", "2005–2006", "9788785590244"),
+    ("Tegn", "2005–2006", "9788785590251"),
+    ("Jordens liv", "2006", "9788785590268"),
+    ("Opdagelsesrejse", "2006", "9788785590275"),
+    ("Månelys", "2006–2009", "9788785590282"),
+    ("Aftryk", "2010–2011", "9788785590299"),
+    ("Landskab", "2004–2023", "9788785590305"),
 ];
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    for (samling_name, year) in YEARS.iter() {
+    for (samling_name, year, isbn) in YEARS.iter() {
         let filename = format!("books/{}.epub", samling_name.replace(" ", "_"));
         let mut builder = EpubBuilder::new(ZipLibrary::new()?)?;
 
+//        let cover_page = format!(
+//            r#"<html xmlns="http://www.w3.org/1999/xhtml">
+//    <head><title>Forside</title><link rel="stylesheet" type="text/css" href="../stylesheet.css"/></head>
+//    <body style="margin:0; padding:0; text-align:center;">
+//        <img src="cover.png" alt="{samling_name}"
+//             style="max-width:100%; max-height:100vh; display:block; margin:0 auto;"/>
+//    </body>
+//    </html>"#
+//        );
         let cover_page = format!(
             r#"<html xmlns="http://www.w3.org/1999/xhtml">
-    <head><title>Forside</title><link rel="stylesheet" type="text/css" href="../stylesheet.css"/></head>
-    <body style="margin:0; padding:0; text-align:center;">
-        <img src="cover.png" alt="{samling_name}"
-             style="max-width:100%; max-height:100vh; display:block; margin:0 auto;"/>
-    </body>
-    </html>"#
-        );
+            <head>
+                <title>Forside</title>
+                <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+            </head>
+            <body>
+                <div style="text-align:center;">
+                    <img src="cover.png" alt="{samling_name}"
+                         style="max-width:100%; max-height:100vh; display:block; margin:0 auto;"/>
+                </div>
+            </body>
+            </html>"#
+            );
 
         builder.add_content(
             EpubContent::new("cover.xhtml", cover_page.as_bytes()).reftype(ReferenceType::Cover),
@@ -72,6 +86,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         //builder.metadata("identifier", isbn)?
         let uuid = Uuid::new_v5(&MY_NAMESPACE, samling_name.as_bytes());
         builder.set_uuid(uuid);
+        builder.add_metadata_opf(Box::new(MetadataOpf {
+            name: "dc:identifier".to_string(),
+            content: isbn.to_string(),
+        }));
 
         let cover_file = format!("covers/cover_{}.png", samling_name.replace(" ", "_"));
         let image_data =
@@ -134,10 +152,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         ";
 
         builder.stylesheet(css.as_bytes())?;
+        //builder.add_resource("stylesheet.css", css.as_bytes(), "text/css")?;
 
         let title_page = format!(
             r#"<html xmlns="http://www.w3.org/1999/xhtml">
-    <head><link rel="stylesheet" type="text/css" href="../stylesheet.css"/></head>
+    <head><title>{samling_name}</title><link rel="stylesheet" type="text/css" href="stylesheet.css"/></head>
     <body>
         <h1>{}</h1>
         <h2>Frede Østergaard</h2>
@@ -153,17 +172,30 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         )?;
 
         let copyright_page = format!(
-            r#"<html xmlns="http://www.w3.org/1999/xhtml">
-    <head><title>Kolofon</title><link rel="stylesheet" type="text/css" href="../stylesheet.css"/></head>
-    <body>
-        <div class="copyright">
-            <p>{samling_name}</p>
-            <p>© Frede Østergaard {year}</p>
-            <p>Alle rettigheder forbeholdes</p>
-        </div>
-    </body>
-    </html>"#
-        );
+r#"<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Kolofon</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+<body>
+    <div class="copyright">
+        <p>{samling_name}</p>
+
+        <p>© Frede Østergaard {year}</p>
+        <p>Digtene er skrevet: {year}</p>
+
+        <p>EPUB-udgave udgivet i 2026</p>
+        <p>Forlaget Den Gamle Poet</p>
+
+        <p>ISBN: {isbn}</p>
+
+        <p>Kildekode: github.com/jesper-olsen/poeten</p>
+
+        <p>Alle rettigheder forbeholdes</p>
+    </div>
+</body>
+</html>"#
+);
 
         builder.add_content(
             EpubContent::new("copyright.xhtml", copyright_page.as_bytes())
@@ -195,7 +227,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             .enumerate()
             .filter(|(_, (name, _, _))| *name == *samling_name);
 
-        for (i, (_, temaer_mask, tekst)) in samling_poems {
+        for (i, (_, _temaer_mask, tekst)) in samling_poems {
             let first_line = tekst.lines().next().unwrap_or("Uden titel");
 
             // Format Themes
@@ -221,7 +253,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             let content = format!(
                 r#"<html xmlns="http://www.w3.org/1999/xhtml">
                 <head>
-                    <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
                     <title>{first_line}</title>
                 </head>
                 <body>
@@ -245,7 +277,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         let about = r#"<?xml version="1.0" encoding="utf-8"?>
         <html xmlns="http://www.w3.org/1999/xhtml">
         <head>
-            <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+            <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
             <title>Om forfatteren</title>
         </head>
         <body>
@@ -267,11 +299,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             Siden er der udkommet en lang række digtsamlinger.
             </p>
 
-            <br/>
             <h2>Kontakt</h2>
             <p>
-            Har du kommentarer, eller ønsker du at give feedback på digtene, 
-            er du velkommen til at skrive til forfatteren på: 
             <a href="mailto:dengamlepoet@gmail.com">dengamlepoet@gmail.com</a>
             </p>
         </body>
@@ -286,7 +315,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
         let back_matter = r#"<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
         <title>Andre samlinger</title>
     </head>
     <body>
