@@ -189,7 +189,7 @@ r#"<html xmlns="http://www.w3.org/1999/xhtml">
 
         <p>ISBN: {isbn}</p>
 
-        <p>Kildekode: github.com/jesper-olsen/poeten</p>
+        <p>Kildekode: github.com/forlaget-den-gamle-poet/poeten</p>
 
         <p>Alle rettigheder forbeholdes</p>
     </div>
