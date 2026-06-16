@@ -1,0 +1,45 @@
+Forlaget Den Gamle Poet - Repository License
+
+This repository contains both software source code and literary creative content. 
+Different licensing terms apply to these distinct components:
+
+1. SOFTWARE SOURCE CODE
+All software source code contained in this repository (including the Rust EPUB 
+generation utilities, build scripts, and Single Page Application frontend code) 
+is licensed under the MIT License. See the "MIT License" section below for details.
+
+2. LITERARY CONTENT AND POETRY
+All text, manuscripts, formatting metadata, and compiled eBook files (.epub) 
+representing the poetic works of Frede Østergaard (Den Gamle Poet) are strictly 
+copyrighted. 
+
+Copyright © Frede Østergaard. Alle rettigheder forbeholdes (All Rights Reserved). 
+No part of these literary works may be reproduced, distributed, or transmitted 
+in any form or by any means for commercial purposes without explicit prior 
+written permission from the publisher.
+
+--------------------------------------------------------------------------------
+MIT LICENSE (Applies to Software Source Code Only)
+--------------------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2026 Jesper Olsen
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

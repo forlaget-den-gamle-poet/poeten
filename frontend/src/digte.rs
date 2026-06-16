@@ -90,7 +90,7 @@ pub static TEMAER: [&str; 40] = [
     "Tro",
 ];
 
-pub static DIGTE: [(&str, u64, &str);1727]=[
+pub static DIGTE: [(&str, u64, &str);1726]=[
 ("Aftryk",283467890724,"Aftryk
 
 Tapetet husker dig
@@ -32432,8 +32432,6 @@ derfor ser man  ikke på
 vort niveau individer 
 der presses af 
 artsfæller
-          "),
-("Yrk",0,"2002-2003
           "),
 ("Yrk",10737451008,"Aflysning
 
